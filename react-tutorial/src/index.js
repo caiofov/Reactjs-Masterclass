@@ -1,17 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css'
+import React from 'react' //poderá não ser usado diretamente, mas não pode ser tirado -> utilizamos a sintaxe jsx (utilizar html com js)
+import ReactDOM from 'react-dom'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import App from './App'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+ReactDOM.render( //recebe um elemento que eu quero renderizar e em qual elemento ele será renderenrizado
+    <App></App>, //elemento a ser renderizado -> pode ser uma string em vez de jsx
+    document.getElementById('root') //onde ele será rendenrizado -> single page application
+)

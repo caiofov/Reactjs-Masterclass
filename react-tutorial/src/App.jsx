@@ -8,17 +8,24 @@ import Card from './components/layout/Card'
 import Repeticao from './components/basicos/Repeticao'
 import Condicional from './components/basicos/Condicional'
 import CondicionalComIf from './components/basicos/CondicionalComIf'
+import Pai from './components/comunicacao/direta/Pai'
 
 //importando a folha de estilo
 import './App.css'
 export default (props) => (
 <div className='App'>
+    <Card titulo="#07 - Comunicação Direta" color="#FA6900">
+        <Pai sobrenome="Freitas"></Pai>
+    </Card>
+
+
+
     {/*o uso de componentes permite que criemos mais de um elemento do mesmo tipo*/}
     <Card titulo="Componente com Parâmetros">
         <ComParametro titulo = "Esse é o título" subtitulo="Esse é subtítulo" />
     </Card>
 
-    <Card titulo="Componente com Filhos">   
+    <Card titulo="Componente com Filhos" color="#E94C6F">   
         <ComFilhos>
             <ul>
                 <li>Ana</li>
@@ -28,17 +35,17 @@ export default (props) => (
             </ul>
         </ComFilhos>
     </Card> 
-    <Card titulo="Primeiro Componente">
+    <Card titulo="Primeiro Componente" color = "#E94C6F">
         <Primeiro/>
     </Card>
 
-    <Card titulo= "Repetição">
+    <Card titulo= "Repetição" color="#E94C6F">
         <Repeticao></Repeticao>
     </Card>
-    <Card titulo = "Condicional">
+    <Card titulo = "Condicional" color="#FA6900">
         <Condicional numero={10}></Condicional>
     </Card>
-    <Card titulo = "Condicional com If">
+    <Card titulo = "Condicional com If" color="#E94C6F">
         <CondicionalComIf numero={11}></CondicionalComIf>
     </Card>
 </div>);

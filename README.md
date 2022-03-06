@@ -1,2 +1,2 @@
-# Reactjs-40minutes
-40-minutes React tutorial
+# ReactJS Masterclass
+A ReactJS tutorial by Cod3r Cursos youtube channel

@@ -17,7 +17,7 @@ export default class Contador extends Component { //criamos uma classe que irá 
     // }
 
     //pode se fazer de uma forma mais simples:
-    state = {
+    state = { //irá armazenar os atributos da classe. Serão mudados pela função setState
         passo: this.props.passo || 1, //de quanto em quanto será adicionado/retirado do contador
         valor: this.props.valor || 0
     }

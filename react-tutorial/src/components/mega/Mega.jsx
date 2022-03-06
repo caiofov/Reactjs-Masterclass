@@ -11,7 +11,7 @@ export default props => {
         //caso o array não possua o numero, ira retornar o numero. Caso contrario, chamará novamente a função de forma recursiva para sortear um novo número
         return array.includes(num) ? gerarNumerosNaoContidos(array) : num
     }
-
+ 
     function gerarNumeros() {
         const novoArray = Array(props.qtdeNumero).fill(0)
         .reduce((a) => {
